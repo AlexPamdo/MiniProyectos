@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
         isNaN(costoBase) // Comprobar que costoBase es un número
       ) {
         text.textContent = "Complete todos los campos"; // Cambiar de función a propiedad
+      } else if (!validarAño(añoPublicacion)) {
+        text.textContent = "Ingrese un año valido";
+      } else if (!validarCosto(costoBase)){
+        text.textContent = "Ingrese un precio valido";
       } else {
         let tipe; // Declarar la variable tipe
         let Adicional; // Declarar la variable Adicional
@@ -78,5 +82,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       }
     });
+
+function validarAño(año){
+  const añoRegex = /^\d{4}/;
+  return añoRegex.test(año); 
+}
+function validarCosto(costo){
+  const costoRegex = /^\d/;
+  return costoRegex.test(costo); 
+}
+
   });
   
