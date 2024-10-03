@@ -1,15 +1,13 @@
 .header {
-  background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.212)
-    ),
-    /* Gradiente negro */ url("../img/R.jpg"); /* Ruta de la imagen de fondo */
-
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0 0 0 / 68%)), /* Gradiente negro */ url(../img/R.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.298);
+}
+
+body{
+  background: rgba(250, 235, 215, 0.753);
 }
 
 .navbar-custom a {
@@ -40,7 +38,8 @@
   align-items: center;
   border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.298);
+  /* box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.298);
+  background-color: white; */
 }
 
 .custom-card img {
@@ -54,14 +53,15 @@
 /* comentarios */
 
 .card-comentary {
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
-  box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.298);
-  margin: 20px;
-  width: 18rem;
+ 
+  
   max-height: 250px;
   transition: all 300ms ease;
-  background-color: white;
+
+  /* box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.298);
+  background-color:#ffffffc9; */
 }
 
 .card-body-comentary {
@@ -84,7 +84,7 @@
 
 .beneficios-container {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.781)),
-    url(../img/Beneficios.jpg);
+    url(../img/adulto-joven-bicicleta-electrica-campo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -97,8 +97,25 @@
 
 
 .form-info{
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.781)),
-  url(../img/Beneficios.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.336)),
+  url(../img/form.jpg);
   background-repeat: no-repeat;
-  
+  background-size: cover;
+  /* border-radius: 30px 0px 0 30px; */
+}
+
+
+.form-container{
+  /* border-radius: 30px; */
+  box-shadow: 1px 6px 14px 0px #00000063;
+  background-color: #ffffff;;
+}
+
+.form-main-container{
+
+  background-color: #25271f;
+}
+
+.text-beige{
+  color: rgb(250, 235, 215);
 }
