@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h3>Numeros Enteros
+        </h3>
+    <p id="info"></p>
+    <input type="text" id="number">
+    <button type="button" id="button">Probar</button>
+</div>
+
+<div>
+    <h3>Decimales
+    </h3>
+<p id="info2"></p>
+<input type="text" id="number2">
+<button type="button" id="button2">Probar</button>
+</div>
+
+    <script>
+      
+        document.querySelector('#button').addEventListener( "click" , () => {
+            const info = document.querySelector('#info');
+            const number = parseInt( document.querySelector('#number').value );
+
+            if(isNaN(number)){
+                info.textContent = "Ingrese un numero";
+            }else{
+                info.textContent = number;
+            }
+          
+        })
+        
+
+        document.querySelector('#button2').addEventListener( "click" , () => {
+            const info = document.querySelector('#info2');
+            const number = parseFloat( document.querySelector('#number2').value );
+
+            if(isNaN(number)){
+                info.textContent = "Ingrese un numero";
+            }else{
+                info.textContent = number;
+            }
+          
+        })
+        
+
+    </script>
+    
+</body>
+</html>

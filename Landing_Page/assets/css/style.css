@@ -112,8 +112,11 @@ body{
 }
 
 .form-main-container{
-
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.336)),
+  url(../img/form.jpg);
   background-color: #25271f;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text-beige{
